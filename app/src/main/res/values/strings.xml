@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">RayMenuDemo</string>
+    <string name="title_activity_main2">Main2Activity</string>
+
+    <string name="button_str">开始</string>
+</resources>
