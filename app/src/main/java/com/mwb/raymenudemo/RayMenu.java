@@ -311,24 +311,6 @@ public class RayMenu extends ViewGroup {
                     Animation.RELATIVE_TO_SELF, 0.5f, Animation.RELATIVE_TO_SELF, 0.5f);
             anim.setDuration(300);
             anim.setFillAfter(true);
-//            anim.setAnimationListener(new Animation.AnimationListener() {
-//                @Override
-//                public void onAnimationStart(Animation animation) {
-//
-//                }
-//
-//                @Override
-//                public void onAnimationEnd(Animation animation) {
-//                    if (mListener != null) {
-//                        mListener.onClick(mClickView, mPos);
-//                    }
-//                }
-//
-//                @Override
-//                public void onAnimationRepeat(Animation animation) {
-//
-//                }
-//            });
             mToggleBtn.startAnimation(anim);
 
         } else {
@@ -339,7 +321,7 @@ public class RayMenu extends ViewGroup {
     @Override
     public boolean onTouchEvent(MotionEvent event) {
         int action = event.getAction();
-        // 设置touch事件，关闭menu，只有当menu已经打开才有效
+        // 设置touch事件，点击背景关闭menu，只有当menu已经打开才有效
         if (mIsOpen && action == MotionEvent.ACTION_DOWN) {
             toggleMenu(300);
 
